@@ -2,6 +2,8 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+
+	
 </script>
 
 <svelte:head>
@@ -153,12 +155,12 @@
   @media (max-width: 800px) and (min-width: 500px) {
     .details-button {
       display: block;
-      
+	}
     .card-content button{ 
     display: none;
       }
 	} 
-  }
+  
   
   @media (max-width: 800px) {
     .card {
