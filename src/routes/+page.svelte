@@ -28,6 +28,134 @@
 	<Counter />
 </section>
 
+<div class="card" id="card"> 
+
+    <div class="dup-btn">
+  <button id="dup">Duplicate</button>
+  </div>
+    
+    <h1> Drew Allar</h1>
+  <div class="btn-image">
+    <img src= https://th.bing.com/th/id/OIP.yghP1TEXURUPo9L6TeInkAHaD4?w=331&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7 alt = "Beaver Stadium">
+         <p> Drew Allar</p> 
+  </div>
+  
+  <div class="btn-wrapper">
+     <button id="stat">Stats</button>
+    <a href="https://gopsusports.com/sports/football/roster/drew-allar/13992"></a>
+  </div>
+  
+  
+  <div class="details-button">
+    <button id="det">Details</button>
+    <a href="https://hax.psu.edu/"></a>
+  </div>
+   
+    </div>
+  
+  <script> document.querySelector('#dup').addEventListener('click', (e) => {
+        
+      let p = document.getElementById("card");
+      let d = p.cloneNode(true);
+      document.body.appendChild(d);
+          });
+  </script>
+  
+  <style>
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  
+  .card-container {
+    background-color: #001e44;
+    width: 20%;
+    height: 50%;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  
+  .card-content {
+    text-align: center;
+    color: white;
+    display: block;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  
+  .card-content> img{
+    width: 200px;
+    max-width:80%;
+    border-radius: 10px;
+  }
+  
+  
+  .card-content button{
+    margin-top:40px;
+    text-decoration: none;
+    background-color: #ffff;
+    color:#001e44 ;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .card-content button:hover{ 
+    background-color: #001e44;
+    color: white;
+  
+  }
+  
+  .card-content button a{
+     text-decoration: none;
+  }
+  
+  #cDescription {
+    color: white;
+    font-family: "Lucida Console";
+  }
+  
+  @media (max-width: 800px) and (min-width: 500px) {
+    .details-button {
+      display: block;
+      
+      .card-content button{
+    display: none;
+      }
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .card {
+      max-width: 500px;
+    }
+      .card-content button{
+    display: none;
+      }
+    }
+  
+  /*
+  if (title.innerHTML == 'something else'){
+      title.innerHTML = 'Penn State Blue and White Game';
+       }
+        else{
+        title.innerHTML = 'something else';
+        }
+  
+      cardTitle.addEventListener("click", function (e) {
+     
+        cardTitle.textContent = "Something Else";
+        
+  */
+  </style>
+
 <style>
 	section {
 		display: flex;
