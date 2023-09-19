@@ -36,7 +36,7 @@
     
     <h1> Drew Allar</h1>
   <div class="btn-image">
-    <img src= https://th.bing.com/th/id/OIP.yghP1TEXURUPo9L6TeInkAHaD4?w=331&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7 alt = "Beaver Stadium">
+    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pEBqeQ_41-Bf5E7eDYhWpRVVI1bAYUplYQ&usqp=CAU" alt = "Beaver Stadium"/>
          <p> Drew Allar</p> 
   </div>
   
@@ -60,9 +60,37 @@
       document.body.appendChild(d);
           });
   </script>
-  
-  <style>
-  .cards {
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0.6;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	.welcome {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 0 0 calc(100% * 495 / 2048) 0;
+	}
+
+	.welcome img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
+	}
+
+	.cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -126,10 +154,10 @@
     .details-button {
       display: block;
       
-      .card-content button{
+    .card-content button{ 
     display: none;
       }
-    }
+	} 
   }
   
   @media (max-width: 800px) {
@@ -140,48 +168,4 @@
     display: none;
       }
     }
-  
-  /*
-  if (title.innerHTML == 'something else'){
-      title.innerHTML = 'Penn State Blue and White Game';
-       }
-        else{
-        title.innerHTML = 'something else';
-        }
-  
-      cardTitle.addEventListener("click", function (e) {
-     
-        cardTitle.textContent = "Something Else";
-        
-  */
-  </style>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
