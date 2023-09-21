@@ -55,13 +55,13 @@
    
     </div>
   
-  <script> document.querySelector('#dup').addEventListener('click', (e) => {
+  <!-- <script> document.querySelector('#dup').addEventListener('click', (e) => {
         
       let p = document.getElementById("card");
       let d = p.cloneNode(true);
       document.body.appendChild(d);
           });
-  </script>
+  </script> -->
 
 <style>
 	section {
